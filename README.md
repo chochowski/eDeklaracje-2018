@@ -1,4 +1,4 @@
-# eDeklaracje-2018
+# eDeklaracje-2018 
 how to run eDeklaracje 2018 on Ubuntu 17.10
 
 # install necesary i386 libraries
@@ -19,6 +19,7 @@ sudo mkdir /opt/adobe-air-sdk
 sudo tar jxf AdobeAIRSDK.tbz2 -C /opt/adobe-air-sdk
 
 # Download Air runtime/SDK from Archlinux
+
 wget https://aur.archlinux.org/cgit/aur.git/snapshot/adobe-air.tar.gz
 
 sudo tar xvf adobe-air.tar.gz -C /opt/adobe-air-sdk
@@ -26,6 +27,7 @@ sudo tar xvf adobe-air.tar.gz -C /opt/adobe-air-sdk
 sudo chmod +x /opt/adobe-air-sdk/adobe-air/adobe-air
 
 # Get e-Deklaracje.air from mf
+
 wget http://www.e-deklaracje.gov.pl/files/dopobrania/e-dek/app/e-DeklaracjeDesktop.air
 
 
@@ -37,5 +39,6 @@ sudo rm /usr/lib/libgnome-keyring.so.0.2.0
 
 sudo rm /usr/lib/libgnome-keyring.so.0
 
-#Start e-Deklaracje
+# Start e-Deklaracje
+
 /opt/adobe-air-sdk/adobe-air/adobe-air /home/mchochowski/Downloads/e-DeklaracjeDesktop.air
