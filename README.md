@@ -11,13 +11,18 @@ sudo ln -s /usr/lib/i386-linux-gnu/libgnome-keyring.so.0.2.0 /usr/lib/libgnome-k
 
 # Download Adobe Air
 cd ~/Downloads
+
 wget http://airdownload.adobe.com/air/lin/download/2.6/AdobeAIRSDK.tbz2
+
 sudo mkdir /opt/adobe-air-sdk
+
 sudo tar jxf AdobeAIRSDK.tbz2 -C /opt/adobe-air-sdk
 
 # Download Air runtime/SDK from Archlinux
 wget https://aur.archlinux.org/cgit/aur.git/snapshot/adobe-air.tar.gz
+
 sudo tar xvf adobe-air.tar.gz -C /opt/adobe-air-sdk
+
 sudo chmod +x /opt/adobe-air-sdk/adobe-air/adobe-air
 
 # Get e-Deklaracje.air from mf
@@ -25,9 +30,11 @@ wget http://www.e-deklaracje.gov.pl/files/dopobrania/e-dek/app/e-DeklaracjeDeskt
 
 
 sudo mkdir /opt/e-Deklaracje-2018
+
 sudo mv e-DeklaracjeDesktop.air /opt/e-Deklaracje-2018
 
 sudo rm /usr/lib/libgnome-keyring.so.0.2.0 
+
 sudo rm /usr/lib/libgnome-keyring.so.0
 
 #Start e-Deklaracje
